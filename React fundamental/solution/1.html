@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+  </head>
+  <body>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+  <script type="module">
+    const rootElement = document.getElementById('root')
+
+    const hellowElement = React.createElement('span', {}, 'hello')
+    const worldElement = React.createElement('span', {}, 'world')
+    
+    //syntax::::> React.createElement(component, props, ...children)
+    const element = React.createElement('div', {className :"container"}, hellowElement, ' ', worldElement)
+    //console.log(React.createElement);
+   ReactDOM.render(element, rootElement)
+
+  </script>
+</body>
+</html>

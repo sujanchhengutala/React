@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  <div id="root"></div>
+
+  <!-- 🐨 add React and ReactDOM on the page.
+       💰 Here are script tags that'll do the job:
+  <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+  -->
+
+             <script type="module">
+    const rootElement = document.getElementById('root')
+
+    // You're going to re-implement this code using React!
+
+    // These three lines are similar to React.createElement. // Implement these three lines using React.
+    
+    const element = document.createElement('div')
+    element.textContent = 'Hello World' // 💰 in React, you set this with the "children" prop
+    element.className = 'container' // 💰 in React, this is also called the "className" prop
+
+    // This is similar to ReactDOM.render
+    rootElement.append(element)
+
+  </script>
+</body>
+</html>
