@@ -1,8 +1,8 @@
-import useState  from './1-useState/1-useState-Basic';
+import UseStateBasic from './1-useState/1-useState-Basic';
 function App() {
   return (
     <div className="container">
-     <State />
+     <UseStateBasic />
     </div>
   );
 }
