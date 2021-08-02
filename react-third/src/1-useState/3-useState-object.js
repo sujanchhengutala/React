@@ -1,22 +1,25 @@
-import React from 'react'
+import { useState } from 'react'
 
 const UseStateObject = () => {
-  const [person, setPerson] = React.useState({
-    name: 'sujan chhengutala',
-    age: 22,
-    message: `"drink beer save water!"`,
-  })
+  //   const [person, setPerson] = React.useState({
+  //     name: 'Ram',
+  //     age: 32,
+  //     message: 'Hello, I am Ram!',
+  //   })
+
+  const [name, setName] = useState('Ram')
+  const [age, setAge] = useState(32)
+  const [message, setMessage] = useState('Hello, I am Ram!')
 
   const changeMessage = () => {
-    setPerson({ ...person, message: 'alcohol is injurus to health' })
+    setMessage('New Message')
   }
-
-  //console.log(person)
 
   return (
     <>
-    <h1>Hello, i'am <u><i>{person.name}</i></u> and i m {person.age} years old.
-    <h2>my message is: {person.message}</h2></h1>
+      <h3>{name}</h3>
+      <h3>{age}</h3>
+      <h3>{message}</h3>
       <button className='btn' onClick={changeMessage}>
         Change Message
       </button>
