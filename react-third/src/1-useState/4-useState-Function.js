@@ -3,7 +3,9 @@ import React, { useState } from 'react'
 const UseStateCounter = () => {
     const [value, setValue] = useState(0);
     const increaseHandler = () => {
-        setTimeout(() => setValue(value + 1), 1000);
+        setTimeout(() => setValue((prevState)=>{
+            return prevState +1;
+        }), 1000);
     }
     const resetHandler = () => {
         if (value !== 0) {
@@ -15,7 +17,9 @@ const UseStateCounter = () => {
     }
     const decrementHandler = () => {
         if (value > 0) {
-            setTimeout(() => setValue(value - 1), 1000);
+            setTimeout(() => setValue((prevState)=>{
+                return prevState - 1 ;
+            }), 1000);
         }
         else {
             alert('Zero limit Reach!')
@@ -26,7 +30,7 @@ const UseStateCounter = () => {
         <>
             <section>
                 <h2>simple counter</h2>
-                <h1><button className="btn">{value}</button></h1>
+                <h1>{value}</h1>
                 <button className='btn' onClick={increaseHandler}>Increase</button>
                 <button className='btn' onClick={resetHandler}>Reset</button>
                 <button className='btn' onClick={decrementHandler}>Decrease</button>
