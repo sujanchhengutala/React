@@ -16,6 +16,6 @@ const UseEffectBasic = ()=>{
         <h1>{value}</h1>
         <button className = 'btn' onClick = {()=>setValue(value + 1)}>click me</button>
         </>
-    )
+    ) 
 }
 export default UseEffectBasic
