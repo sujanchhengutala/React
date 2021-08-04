@@ -9,7 +9,7 @@ const UseEffectBasic = ()=>{
         if(value >= 1){
             document.title = `New message (${value})`
         }
-    })
+    }, [value])
     console.log('outside useEffect')
     return(
         <>
