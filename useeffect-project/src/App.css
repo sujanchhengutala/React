@@ -1,0 +1,57 @@
+body {
+  background-color: #b3e5fc;
+  border-radius: 10px;
+  font-family: "Raleway", sans-serif;
+}
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+.btn:hover {
+  background-color: #136ca7;
+}
+
+.textLeft {
+  text-align: left;
+}
+.loadingDiv {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+/* .card {
+  width: 450px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: auto;
+} */
+.image {
+  min-width: 155px;
+  margin-right: 20px;
+}
+.stats {
+  background: #f2f5f8 !important;
+  color: #000 !important;
+}
+.articles {
+  font-size: 10px;
+  color: #1c2026;
+}
+.number1 {
+  font-weight: 500;
+}
+.followers {
+  font-size: 10px;
+  color: #1c2026;
+}
+.number2 {
+  font-weight: 500;
+}
+.rating {
+  font-size: 10px;
+  color: #1c2026;
+}
+.number3 {
+  font-weight: 500;
+}
