@@ -1,8 +1,8 @@
-import UseEffectBasic from './2-useEffect/1-useEffect-basic';
+import UseEffectApi from './2-useEffect/project/useEffectApi';
 function App() {
   return (
     <div className="container">
-     <UseEffectBasic />
+     <UseEffectApi />
     </div>
   );
 }
