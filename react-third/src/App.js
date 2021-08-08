@@ -1,9 +1,11 @@
-import UseEffectApi from './2-useEffect/project/useEffectApi';
-function App() {
+import ReactForm from "./4-reactForm-Basic/1-reactForm"
+
+const App = () => {
   return (
-    <div className="container">
-     <UseEffectApi />
+    <div>
+      <ReactForm />
     </div>
-  );
+  )
 }
-export default App;
+
+export default App
