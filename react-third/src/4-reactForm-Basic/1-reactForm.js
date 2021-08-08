@@ -21,7 +21,8 @@ const ReactForm = () => {
     }
     return (
         <>
-            <article>
+            <article className="container">
+                <h1>React form basic</h1>
                 <form className="form" onSubmit={handleSubmit}>
                     <div className="form-control">
                         <label htmlFor="firstName">Name :</label>
