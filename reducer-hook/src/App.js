@@ -1,10 +1,10 @@
-
-import UseReducer from './useReducer-Hook'
-function App() {
+import PropDrilling from './2-prop-drilling/prop-drilling'
+const App = () => {
   return (
-    <UseReducer />
-    
-  );
+    <div>
+      <PropDrilling />
+    </div>
+  )
 }
 
-export default App;
+export default App
