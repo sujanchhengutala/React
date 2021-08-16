@@ -1,9 +1,9 @@
-import ContextAPI from "./3-contextAPI/1-context-api"
+import Index from "./5-prop-types/index";
 
 const App = () => {
   return (
-    <div className='container'>
-      <ContextAPI />
+    <div className = 'container' >
+      <Index />
     </div>
   )
 }
