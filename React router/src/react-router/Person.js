@@ -11,7 +11,7 @@ const Person = () => {
     useEffect(()=>{
        const newPerson = data.find((person)=> person.id === parseInt(id))
        setName(newPerson.name)
-    })
+    },[setName, id])
 
     return <><h2>{ name }</h2>
     <Link to = '/People' className = "btn">Back to person</Link></>
