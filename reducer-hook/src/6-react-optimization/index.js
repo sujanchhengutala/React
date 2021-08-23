@@ -5,6 +5,7 @@ const url = 'https://reactcourseapi.gorakhjoshi.com/';
 const Index = () => {
     const { products } = useFetch(url)
     const [count, setCount] = useState(0)
+    console.log('Index compoent is running')
     // console.log(products)
     return (
         <>
@@ -14,7 +15,7 @@ const Index = () => {
         </>
     )
 }
-    const BigList = ({ products}) => {
+    const BigList = React.memo(({ products}) => {
         // console.log(products)
         console.log('BigList is running')
 
@@ -29,7 +30,7 @@ const Index = () => {
         </>
 
     )
-}
+})
 const SingleProducts = ({fields})=>{
     console.log('product is running')
     const {name, price} = fields
