@@ -1,4 +1,4 @@
-import Index from "./5-prop-types/index";
+import Index from "./6-react-optimization";
 
 const App = () => {
   return (

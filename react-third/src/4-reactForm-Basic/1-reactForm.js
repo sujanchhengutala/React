@@ -3,7 +3,7 @@ const ReactForm = () => {
     // const [firstName, setFirstName] = useState('')
     // const [email, setEmail] = useState('')
     // const [age, setAge] = useState('')
-    const [person, setPerson]= useState({firstName: '', email: '', age: ''})
+    const [person, setPerson] = useState({ firstName: '', email: '', age: '' })
     const [people, setPeople] = useState([])
     console.log(people)
 
@@ -21,19 +21,19 @@ const ReactForm = () => {
     //         console.log('your value is empty')
     //     }
     // }
-    const handleSubmit = (e)=>{
+    const handleSubmit = (e) => {
         e.preventDefault()
         if (person.firstName && person.email && person.age) {
-                    const newPerson = {...person, id: new Date().getTime().toString()}
-                    setPeople([...people, newPerson])
-                    setPerson({firstName: '', email: '', age: ''})
-            }
+            const newPerson = { ...person, id: new Date().getTime().toString() }
+            setPeople([...people, newPerson])
+            setPerson({ firstName: '', email: '', age: '' })
+        }
 
     }
-    const handleChange = (e)=>{
+    const handleChange = (e) => {
         const name = e.target.name
         const value = e.target.value
-        setPerson({...person, [name]: value})
+        setPerson({ ...person, [name]: value })
 
     }
     return (
@@ -68,7 +68,7 @@ const ReactForm = () => {
                             value={person.age}
                             onChange={handleChange} />
                     </div>
-                    <button type='submit' onClick= {handleSubmit}> Add Person </button>
+                    <button type='submit' onClick={handleSubmit}> Add Person </button>
                 </form>
                 {
                     people.map((person) => {
